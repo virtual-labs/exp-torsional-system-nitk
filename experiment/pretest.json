@@ -2,38 +2,86 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Torsional vibation, occurs:  ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Perpendicular to axis of the shaft",
+        "b": "Along the axis",
+        "c": "Both a and b",
+        "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Torsion cannot be achieved in this position",
+        "b": "Torisional vibration occurs at this position",
+        "c": "As option b is correct",
+        "d": "As option b is correct"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A torsional system is represented as:",
+      "answers": {
+        "a": "A system of Mass and spring",
+        "b": "A system Mass and Disc",
+        "c": "A system of Disc and spring",
+        "d": "A system of Disc and Shaft"
+      },
+      "explanations": {
+        "a": "A mass and spring is analogous to disc and shaft ",
+        "b": "The disk and mass plays the same role in a system ",
+        "c": "A sring is assumed have linear motion in this concept",
+        "d": "A system of Disc and Shaft represents a torisonal system"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Tosional stifness is calculated using ",
+      "answers": {
+        "a": "Torque and angular twist",
+        "b": "Shear modulus, polar moment of inertia and length",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "It is the ratio of torque and angular twist",
+        "b": "It is the ratio of product of Shear modulus and polar moment of inertia to length",
+        "c": "It can be defined in both the ways",
+        "d": "Option c is correct"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Torsional stifness is analogus to spring stifness",
+      "answers": {
+        "a": "True",
+        "b": "False"
+        
+      },
+      "explanations": {
+        "a": "Stifness is resistance to force that causes deformation",
+        "b": "Option a is correct"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Identify a source of torsional vibration",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "I.C Engine",
+        "b": "Reciprocating Compressor",
+        "c": "Universal Joint",
+        "d": "All the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Intermintent combustion and crank shaft causes torsional vibration",
+        "b": "Forces acing on the piston causes torsional vibration",
+        "c": "If shafts are not parallel, torsional vibration occurs",
+        "d": "All are examples o sources of vibration"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
     }
   ]
 }
