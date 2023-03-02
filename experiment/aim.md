@@ -1,1 +1,1 @@
-### Aim of the experiment
+To visualize a torsional system as a two degree of freedom system and find the natural frequencies.

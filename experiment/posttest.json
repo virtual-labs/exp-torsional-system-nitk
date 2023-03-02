@@ -2,38 +2,78 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "For a system torsional vibrations increases with increase in polar moment of inertia.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
+        
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Option b is corect",
+        "b": "It is proportional to square root of polar moment of inertia"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Torsional stifness is directly proportional to angular twist",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Torsional stifnees is not directly proportional to angular twist",
+        "b": "Torsional stifness is inversly proportional to angular twist"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Torsional stifness is directly proportional to shear modulus",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "It is the ratio of product of Shear modulus and polar moment of inertia to length",
+        "b": "Option a is correct"
       },
       "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A torsional vibration occurs, if disc rotate in:",
+      "answers": {
+        "a": "Same Diection",
+        "b": "Opposite Direction",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Rotation in same direction does not result in torque",
+        "b": "Rotation in opposite direction results in torque",
+        "c": "Option b is correct",
+        "d": "Option b is correct"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "A two rotor systemt will have",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "One mode",
+        "b": "Two mode",
+        "c": "Cannot be calculated",
+        "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The system has more than one rotors",
+        "b": "The system has two rotors",
+        "c": "Option b is correct",
+        "d": "Option b is correct"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
