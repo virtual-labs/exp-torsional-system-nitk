@@ -40,7 +40,7 @@ function handleEvents() {
 
         
     }
-
+/*
     if (button4.in(mouseX, mouseY) && page2){
         runPage3()
         position_graph1.delete();
@@ -60,4 +60,5 @@ function handleEvents() {
         page3 = false;
         //magFac1.initialise();
     }
+    */
 }

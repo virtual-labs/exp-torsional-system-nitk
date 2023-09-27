@@ -78,10 +78,10 @@ function setup() {
     position_graph2 = new Graph(50, 350, 100, 220, "Θ2", "t");
 
     // The Dynamic Graph-1 object initialized with mag_func1 as argument:
-    magFac1 = new DynamicGraph(50, 400, 300, 220, "Θ1/Θst", "ω/ω2",0,20,0,300, System.mag_func1);
+    magFac1 = new DynamicGraph(55, 400, 300, 220, "Θ/Θst", "ω/ωn",0,20,0,300, System.mag_func1 , 0 );
 
     // The Dynamic Graph-2 object initialized with mag_func2 as argument:
-    magFac2 = new DynamicGraph(50, 400, 300, 220, "Θ2/Θst", "ω/ω2",0,20,0,300, System.mag_func2);
+    magFac2 = new DynamicGraph(55, 400, 300, 220, "Θ/Θst", "ω/ωn",0,20,0,300, System.mag_func2 , 255);
 
     // Input Objects initialized:
     T0 = new NumberInput(620, 140, "T0(N)", 500, 1000, 750, 50,1, true);
@@ -114,9 +114,9 @@ function draw() {
         runPage2();
     }
 
-    if (page3){
+   /* if (page3){
         runPage3();
-    }
+    }*/
 }
 
 // Event Handling: (Buttons functionality)

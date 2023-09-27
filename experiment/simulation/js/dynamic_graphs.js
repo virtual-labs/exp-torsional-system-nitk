@@ -1,5 +1,5 @@
 class DynamicGraph  {
-    constructor(x, y, h, w, yLabel, xLabel, minX, maxX, minY, maxY, func) {
+    constructor(x, y, h, w, yLabel, xLabel, minX, maxX, minY, maxY, func , tplgy) {
         this.length = 0;
         this.x = x;
         this.y = y;
@@ -13,23 +13,32 @@ class DynamicGraph  {
         this.yLabel = yLabel;
         this.graphs = [];
         this.function = func;
+        this.tplgy = tplgy ;
+
     }
 
     
     initialise()    {
+     
         if (this.graphs.length>1){
             this.graphs.splice(0,1);
         }
         let temp = [];
-        for (let x = 0; x < this.w; x+=1)   {   
+        for (let x = 0; x < this.w/8; x+=1)   {   
             
             let tempx = map(x,0, this.w,this.minX, this.maxX) ;
 
             let y = map(this.function(tempx, torsional_sys),this.minY,200,0,this.h);
 
-            temp.push([x, y])
+            temp.push([8*x, y*2.5])
         }
-        temp.label = [255,0,0];
+        if(this.tplgy==255)
+        {
+            temp.label = [0,0,255];
+        }
+        else{
+        temp.label = [255,0,this.tplgy];
+        }
         this.graphs.push(temp);
     }
 
@@ -51,7 +60,7 @@ class DynamicGraph  {
         strokeWeight(1);
         line(this.x, this.y, this.x, this.y - this.h);
         line(this.x, this.y, this.x + this.w, this.y);
-
+        
         strokeWeight(0);
         fill(0);
         textSize(18);
