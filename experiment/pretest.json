@@ -36,7 +36,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Tosional stifness is calculated using ",
+      "question": "Torsional stiffness is calculated using ",
       "answers": {
         "a": "Torque and angular twist",
         "b": "Shear modulus, polar moment of inertia and length",
@@ -53,14 +53,14 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Torsional stifness is analogus to spring stifness",
+      "question": "Torsional stiffness is analogous to spring stiffness",
       "answers": {
         "a": "True",
         "b": "False"
         
       },
       "explanations": {
-        "a": "Stifness is resistance to force that causes deformation",
+        "a": "Stiffness is resistance to force that causes deformation",
         "b": "Option a is correct"
       },
       "correctAnswer": "a",

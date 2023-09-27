@@ -1,1 +1,1 @@
-To visualize a torsional system as a two degree of freedom system and find the natural frequencies.
+To visualize torsional oscillations of a two-degree-of-freedom system and find its natural frequencies.

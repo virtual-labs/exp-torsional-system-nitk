@@ -16,20 +16,20 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Torsional stifness is directly proportional to angular twist",
+      "question": "Torsional stiffness is directly proportional to angular twist",
       "answers": {
         "a": "True",
         "b": "False"
       },
       "explanations": {
         "a": "Torsional stifnees is not directly proportional to angular twist",
-        "b": "Torsional stifness is inversly proportional to angular twist"
+        "b": "Torsional stiffness is inversly proportional to angular twist"
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
     },
     {
-      "question": "Torsional stifness is directly proportional to shear modulus",
+      "question": "Torsional stiffness is directly proportional to shear modulus",
       "answers": {
         "a": "True",
         "b": "False"
@@ -44,7 +44,7 @@
     {
       "question": "A torsional vibration occurs, if disc rotate in:",
       "answers": {
-        "a": "Same Diection",
+        "a": "Same Direction",
         "b": "Opposite Direction",
         "c": "Both a and b",
         "d": "None of the above"
@@ -59,10 +59,10 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A two rotor systemt will have",
+      "question": "A two rotor system will have",
       "answers": {
         "a": "One mode",
-        "b": "Two mode",
+        "b": "Two modes",
         "c": "Cannot be calculated",
         "d": "None of the above"
       },

@@ -14,8 +14,6 @@ class System  {
         this.natomega2 =0;
         this.x1 = 0;
         this.x2 = 0;
-
-        
     } // System Class
 
     // Function-1: Initializing the variables and finding the necessary values:
@@ -126,7 +124,7 @@ class System  {
         rotate(radians(deg2));
         line(0 , this.radius2,0,0)
         pop();
-
+        
         // The values of deg1 and deg2 are constantly updated: (as show() function is a loop)
         // deg1 = this.x1_1*(Math.cos(this.natomega1*t)) + this.x1_2*(Math.cos(this.natomega2*t));
         // deg2 = this.r1*this.x1_1*(Math.cos(this.natomega1*t)) + this.r2*this.x1_2*(Math.cos(this.natomega2*t));
