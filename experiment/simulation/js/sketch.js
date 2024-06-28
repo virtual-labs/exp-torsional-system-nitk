@@ -15,12 +15,12 @@ let position_graph2;
 let magFac;
 
 // Inputs:
-let k1;
-let k2;
-let j1;
-let j2;
-let w;
-let T0;
+// let k1;
+// let k2;
+// let j1;
+// let j2;
+// let w;
+// let T0;
 
 // Multiplying Factor: Change it if needed for avoiding "Batman!!"
 let factor = 5; //(Set as 10...can be adjusted if needed)
@@ -48,11 +48,11 @@ let clear;
 
 // preload() function to load the necessary images before running:
 function preload() {
-    play = loadImage("images/blueplaydull.png");
-    pause = loadImage("images/bluepausedull.png");
-    graph = loadImage("images/graphbutton.png");
-    back = loadImage("images/bluebkdulls.png");
-    bg = loadImage("images/frame_copper_ver02.png");
+    // play = loadImage("images/blueplaydull.png");
+    // pause = loadImage("images/bluepausedull.png");
+    // graph = loadImage("images/graphbutton.png");
+    // back = loadImage("images/bluebkdulls.png");
+    // bg = loadImage("images/frame_copper_ver02.png");
     spr = loadImage("images/spring.png");
     
 }
@@ -65,17 +65,19 @@ var deg2 = 1800;
 function setup() {
     textFont("Comic Sans MS");
 
-    // Creating the workspace:
-    createCanvas(width, height);
+    // // Creating the workspace:
+    // createCanvas(width, height);
+    var sketchCanvas = createCanvas(600, 450);
+    sketchCanvas.parent("canvas-container");
 
     // System Initialized:
-    torsional_sys = new System(450, 365, 90, 25);
+    torsional_sys = new System(450, 300, 90, 25);
 
     // Position Graph-1 initialized:
-    position_graph1 = new Graph(50, 200, 100, 220, "Θ1", "t");
+    position_graph1 = new Graph(50, 150, 100, 220, "Θ1", "t");
 
     // Position Graph-2 initialized:
-    position_graph2 = new Graph(50, 350, 100, 220, "Θ2", "t");
+    position_graph2 = new Graph(50, 300, 100, 220, "Θ2", "t");
 
     // The Dynamic Graph-1 object initialized with mag_func1 as argument:
     magFac1 = new DynamicGraph(55, 400, 300, 220, "Θ/Θst", "ω/ωn",0,20,0,300, System.mag_func1 , 0 );
@@ -83,24 +85,14 @@ function setup() {
     // The Dynamic Graph-2 object initialized with mag_func2 as argument:
     magFac2 = new DynamicGraph(55, 400, 300, 220, "Θ/Θst", "ω/ωn",0,20,0,300, System.mag_func2 , 255);
 
-    // Input Objects initialized:
-    T0 = new NumberInput(620, 140, "T0(N)", 500, 1000, 750, 50,1, true);
-    //Change w back to 5:
-    w= new NumberInput(620, 190, "ω(rad/sec)", 0, 50, 4.3, 0.01,0.01, true);
-    k1 = new NumberInput(620, 240, "K1 (N/m)", 2000, 5000, 2500, 50,1, true);
-    // Change j1 to 25 
-    j1 = new NumberInput(620, 290, "J1(kg-m2)", 10, 50, 30, 5,1, true);
-    // Change k2 to 2500
-    k2 = new NumberInput(620, 340, "K2 (N/m)", 2000, 5000, 2500, 50,1, true);
-    // Change j2 to 75
-    j2 = new NumberInput(620, 380, "J2(kg-m2)", 60, 100, 60, 5,1, true);
+    varinit();
+    T0 = $("#T0Spinner").spinner("value");
+    w = $("#wSpinner").spinner("value");
+    k1 = $("#k1Spinner").spinner("value");
+    j1= $("#j1Spinner").spinner("value");
+    k2= $("#k2Spinner").spinner("value");
+    j2= $("#j2Spinner").spinner("value");
 
-    // Button Objects initialized:
-    button1 = new Button(645, 430, pause)
-    button2 = new Button(706, 430, graph)
-    button3 = new Button(645,460,back)
-    button4 = new Button(705, 460, graph)
-    button5 = new Button(645,470,back)
     
 }
 
@@ -118,8 +110,76 @@ function draw() {
         runPage3();
     }*/
 }
+function simstate() {
+    var imgfilename = document.getElementById("playpausebutton").src;
+    imgfilename = imgfilename.substring(
+      imgfilename.lastIndexOf("/") + 1,
+      imgfilename.lastIndexOf(".")
+    );
+  
+    if (animation) {
+      noLoop();
+      animation = false;
+      document.getElementById("playpausebutton").src = "images/blueplaydull.svg";
+      document.querySelector(".playPause").textContent = "Play";
+    } else {
+      loop();
+      animation = true;
+      document.getElementById("playpausebutton").src = "images/bluepausedull.svg";
+      document.querySelector(".playPause").textContent = "Pause";
+    }
+  }
+
+  function graphPlot() {
+    graphStep = 1;
+    document.querySelector(".graph-one").classList.remove("display-hide");
+    document.querySelector(".graph-two").classList.add("display-hide");
+    document.querySelector(".graph-div span").textContent = "Prev";
+    document.querySelector(".graph-button").style.display = "none";
+    screenchangePhase();
+  }
+  
+  function screenchangePhase() {
+    // document.getElementById("cleargraph").style.visibility = "visible";
+
+    phaseAngleGraph();
+  }
+  function screenChangePrevious() {
+    graphStep -= 1;
+    if (graphStep > 0) {
+      phaseAngleGraph();
+      document.querySelector(".graph-two").classList.remove("display-hide");
+      document.querySelector(".graph-div span").textContent = "Prev/Next";
+      document.getElementById("cleargraph").style.visibility = "visible";
+    } else {
+      document.querySelector(".graph-div span").textContent = "";
+      document.querySelector(".graph-button").style.display = "flex";
+      document.querySelector(".graph-one").classList.add("display-hide");
+      document.querySelector(".graph-two").classList.add("display-hide");
+      page1 = true;
+      page2 = false;
+      page3 = false;
+      runPage1();
+    //   document.getElementById("cleargraph").style.visibility = "hidden";
+  
+      document.querySelector(".graph-zero").classList.remove("display-hide");
+      document.querySelector(".graph-button span").textContent = "Graph";
+      //  document.querySelector(".graph-button").classList.remove("display-hide");
+      document.querySelector(".graph-div").classList.add("display-hide");
+    }
+  }
+  function phaseAngleGraph() {
+    // resetGraphs();
+    page1 = false;
+    page2 = true;
+    page3 = false;
+    runPage2();
+  
+    // magFac.initialise();
+    // phaseAng.initialise();
+  }
 
 // Event Handling: (Buttons functionality)
-function mousePressed() {
-    handleEvents();
-}
+// function mousePressed() {
+//     handleEvents();
+// }

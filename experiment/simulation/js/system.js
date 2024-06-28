@@ -91,13 +91,13 @@ class System  {
         stroke(_stroke);
         strokeWeight(_strockweight);
         fill(_fill);
-
+     
         // Drawing State-1: (j2 is drawn first as j2>j1 and we would want j1 to be superimposed on j2)
         push();
         textSize(12);
-        fill(255,0,0)
+        fill(0)
         translate(this.x_equilibrium ,this.y_equilibrium-90)
-        text("j2",this.radius2 ,this.radius2)
+        // text("j2",this.radius2 ,this.radius2)
         rotate(radians(deg2));
         fill (255,0,0);
         ellipse(0 ,0, 2*this.radius2, 2*this.radius2)
@@ -107,9 +107,9 @@ class System  {
         push();
         textSize(12)
         translate(this.x_equilibrium ,this.y_equilibrium-90)
-        fill(255,200,19);
-        textSize(12)
-        text("j1",this.radius1 ,this.radius1)
+        // fill(0);
+        // textSize(12)
+        // text("j1",this.radius1,this.radius1)
         rotate(radians(deg1));
         fill(255,200,19);
         ellipse(0 ,0, 2*this.radius1, 2*this.radius1)
@@ -119,6 +119,7 @@ class System  {
 
         // Drawing State-3: (To make the radial line of j2 visible as it would be overwritten by j1 if included in Drawing State-1)
         push();
+        
         translate(this.x_equilibrium ,this.y_equilibrium-90)
         stroke("blue");
         rotate(radians(deg2));
