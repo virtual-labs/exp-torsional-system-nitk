@@ -24,6 +24,7 @@ class Graph {
     }
     draw(r, g, b)  {
         push();
+        
         let temp_y=[]; 
         
         beginShape();

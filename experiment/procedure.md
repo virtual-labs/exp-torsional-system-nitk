@@ -1,21 +1,24 @@
-Given Data:
-1. T<sub>0</sub> - Torque (Nm)
-2. &omega; - Input Angular Frequency (rad/s)
-3. k<sub>1</sub> - Stiffness of Disc 1 (Nm/rad)
-4. J<sub>1</sub> - Polar Moment of Inertia of Disc 1 (kgm<sup>2</sup>)
-5. k<sub>2</sub> - Stiffness of Disc 2 (NM/rad)
-6. J<sub>2</sub> - Polar Moment of Inertia Disc 2 (kgm<sup>2</sup>)
+### Procedure
 
-The experiment is based on the theory of torsional vibrations of a two-degree-of-freedom system, wherein the discs are represented in terms of their moment of inertia. These oscillations can be changed by varying  T<sub>0</sub>, &omega;, k<sub>1</sub>, J<sub>1</sub>, k<sub>2</sub>, and J<sub>2</sub>. 
+<div style="text-align:left">
+  Click on the Simulation icon <img src="images/simulation.png" alt="Alt text" style="height:80px; width:80px;">  to view the simulation. 
 
-1. Clicking on the simulation tab will open the simulator with the discs oscillating with default values.
+   ![Alt text](images/Screen11.png)
+   
+   In order to view the variable section click on the Variable icon. <img src="images/var1.png" alt="Alt text" style="height:80px; width:80px;">
 
-![Alt text](images/6.png) 
+   ![Alt text](images/variable11.png)
 
-Change the values to observe different responses of the system.
+   Click on Play icon <img src="images/play1.png" alt="Alt text" style="height:80px; width:80px;"> to run the simulation and click on Pause icon <img src="images/pause.png" alt="Alt text" style="height:80px; width:80px;"> to stop it.
 
-2. Clicking on the graph button will show the frequency response curves
+   <!-- Click on the Next icon  <img src="images/next2.png" alt="Alt text" style="height:80px; width:80px;"> to go further.  
 
-![Alt text](images/7.png) 
+   ![Alt text](images/screen2.png) -->
 
-Click on the back button to view the first page.
+   Click on the Next or Prev icon<img src="images/prenex.png" alt="Alt text" style="height:80px; width:80px;"> to cycle through different pages. 
+
+   ![Alt text](images/screen21.png)
+   
+click on the result icon to view the result.<img src="images/result.png" alt="Alt text" style="height:80px; width:80px;"> 
+![Alt text](images/result11.png)
+</div>

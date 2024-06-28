@@ -44,6 +44,7 @@ class DynamicGraph  {
 
     draw()  {
         push();
+        
 
         for (let n = 0; n < this.graphs.length; n++)   {
             beginShape();
