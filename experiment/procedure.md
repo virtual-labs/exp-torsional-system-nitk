@@ -19,4 +19,5 @@
    ![Alt text](images/screen21.png)
 
 5. click on the result icon to view the result.<img src="images/result.png" alt="Alt text" >
+
    ![Alt text](images/result11.png)
