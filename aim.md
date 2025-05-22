@@ -1,0 +1,1 @@
+To visualize torsional oscillations of a two-degree-of-freedom system and find its natural frequencies.

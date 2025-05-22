@@ -1,0 +1,79 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "For a system torsional vibrations increases with increase in polar moment of inertia.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+        
+      },
+      "explanations": {
+        "a": "Option b is correct. It is proportional to square root of polar moment of inertia.",
+        "b": "Correct, the right answer is (b). It is proportional to square root of polar moment of inertia"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Torsional stiffness is directly proportional to angular twist",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Option b is correct. Torsional stifnees is not directly proportional to angular twist",
+        "b": "Correct, the right answer is (b). Torsional stiffness is inversly proportional to angular twist"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Torsional stiffness is directly proportional to shear modulus",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). It is the ratio of product of Shear modulus and polar moment of inertia to length.",
+        "b": "Option a is correct. It is the ratio of product of Shear modulus and polar moment of inertia to length."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Torsional vibration in a rotating system is primarily occurs if the discs rotate in:",
+      "answers": {
+        "a": "Same Direction",
+        "b": "Opposite Direction",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (b). Rotation in same direction does not result in torque.",
+        "b": "Correct, the right is (b). Rotation in opposite direction results in torque.",
+        "c": "Option b is correct. Rotation in opposite direction results in torque.",
+        "d": "Option b is correct. Rotation in opposite direction results in torque."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A two rotor system will have",
+      "answers": {
+        "a": "One mode",
+        "b": "Two modes",
+        "c": "Cannot be calculated",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (b). The system has more than one rotors so the system is considered as 2 DOF system and does not have one mode but will have 2 modes.",
+        "b": "Correct, the right is (b). The system has two rotors(or masses), so the system is considered as 2 DOF system and has 2 modes.",
+        "c": "Option b is correct. The system has two rotors(or masses), so the system is considered as 2 DOF system and has 2 modes.",
+        "d": "Option b is correct. The system has two rotors(or masses), so the system is considered as 2 DOF system and has 2 modes."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}

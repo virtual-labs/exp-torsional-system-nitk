@@ -1,0 +1,87 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Torsional vibation, occurs:  ",
+      "answers": {
+        "a": "Perpendicular to axis of the shaft",
+        "b": "Along the axis",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (b). Torsion cannot be achieved in this position",
+        "b": "Correct, the right answer is (b). Torisional vibration only occurs at this position",
+        "c": "As option b is correct. Torsional vibation occurs along the axis not perpendicular to the axis of shaft.",
+        "d": "As option b is correct. Torsional vibation occurs along the axis not perpendicular to the axis of shaft."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A torsional system is represented as:",
+      "answers": {
+        "a": "A system of Mass and spring",
+        "b": "A system Mass and Disc",
+        "c": "A system of Disc and spring",
+        "d": "A system of Disc and Shaft"
+      },
+      "explanations": {
+        "a": "The right answer is (d). A mass and spring is analogous to disc and shaft. ",
+        "b": "The right answer is (d). The disk and mass plays the same role in a system. ",
+        "c": "The right answer is (d). A sring is assumed have linear motion in this concept.",
+        "d": "Correct, the right answer is (d). A system of Disc and Shaft represents a torisonal system."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Torsional stiffness is calculated using ",
+      "answers": {
+        "a": "Torque and angular twist",
+        "b": "Shear modulus, polar moment of inertia and length",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (c). It is the ratio of torque and angular twist.",
+        "b": "The right answer is (c). It is the ratio of product of Shear modulus and polar moment of inertia to length.",
+        "c": "Correct, the right answer is (c). It can be defined in both the ways.",
+        "d": "Option c is correct. It is the ratio of torque and angular twist and also the ratio of product of Shear modulus and polar moment of inertia to length."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Torsional stiffness is analogous to spring stiffness",
+      "answers": {
+        "a": "True",
+        "b": "False"
+        
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). Stiffness is resistance to force that causes deformation.",
+        "b": "Option a is correct. Stiffness is resistance to force that causes deformation"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Identify a source of torsional vibration",
+      "answers": {
+        "a": "I.C Engine",
+        "b": "Reciprocating Compressor",
+        "c": "Universal Joint",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "The right answer is (d). Intermintent combustion and crank shaft causes torsional vibration",
+        "b": "The right answer is (d). Forces acing on the piston causes torsional vibration",
+        "c": "The right answer is (d). If shafts are not parallel, torsional vibration occurs",
+        "d": "Correct, the right answer is (d). All are examples of sources of vibration"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    }
+  ]
+}
